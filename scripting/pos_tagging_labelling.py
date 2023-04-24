@@ -40,9 +40,9 @@ def label_dataset(sentences,bad_words_set):
         labels.append(label)
     return labels
 
-bad_words = get_bad_words('data/bad-words.csv')
+bad_words = pd.read_csv('data/bad_word.txt', header=None)
 # Converting the list to a set
-bad_words_set = set(bad_words)
+bad_words_set = set(bad_words[0].values)
 # Importing dataset
 dataset = pd.read_csv('data/comments_preprocessed.csv',header=0)
 sentences,pos_tags_dataset = get_sentences_postags(dataset)

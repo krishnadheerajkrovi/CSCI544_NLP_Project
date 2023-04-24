@@ -1,5 +1,4 @@
 import lucene
-
 from org.apache.lucene.analysis.standard import StandardAnalyzer
 from org.apache.lucene.document import Document, Field, StringField, TextField
 from org.apache.lucene.index import IndexWriter, IndexWriterConfig, DirectoryReader
@@ -10,6 +9,7 @@ from org.apache.lucene.util import Version
 from java.nio.file import Paths
 import os
 from argparse import ArgumentParser
+import pandas as pd
 
 
 def create_index():
