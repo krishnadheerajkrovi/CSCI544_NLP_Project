@@ -1,1 +1,1 @@
-# CSCI544_NLP_Project
+Run Data_scraper.py to fetch data
